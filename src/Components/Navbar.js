@@ -15,13 +15,13 @@ const Nav = () => {
   <div className="collapse navbar-collapse navLinks" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto d-flex justify-content-between w-50">
       <li className="nav-item">
-     <NavLink className="nav-link" to="/first" >First</NavLink>
+     <NavLink className="nav-link" to="/first" >الصف الاول</NavLink>
       </li>
             <li className="nav-item">
-     <NavLink className="nav-link" to="/second" >Second</NavLink>
+     <NavLink className="nav-link" to="/second" >الصف الثانى</NavLink>
       </li>
       <li className="nav-item">
-     <NavLink className="nav-link" to="/exams" >Exams</NavLink>
+     <NavLink className="nav-link" to="/exams" >جدول الامتحانات</NavLink>
       </li>
 
     </ul>

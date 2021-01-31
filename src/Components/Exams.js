@@ -2,9 +2,9 @@ import React from 'react'
 
 const Exams = () => {
  return (
-  <div>
-   Exams
-  </div>
+<h1 className="exam-header">
+ لم يتم اصدار جداول الامتحانات فى الوقت الحالى
+</h1>
  )
 }
 

@@ -8,7 +8,7 @@ import {NavLink} from "react-router-dom"
 import gsap from "gsap"
 import { Timeline } from 'gsap/gsap-core'
 const Home = () => {
- useEffect(() => {
+useEffect(() => {
   const tl = new Timeline()
   const logotl= new Timeline({repeat:-1})
   tl.from(".head",{duration:1,opacity :0,x:-100,ease: "sine.out",stagger:.2})

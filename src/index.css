@@ -106,7 +106,44 @@ h4 {
   border: none !important;
   outline: none !important;
 }
-
+.page-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.lessons-header {
+  text-align: center;
+  margin-top: 10px;
+}
+.lessons-list {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 10px;
+}
+.lesson {
+  margin: 50px 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: #ff504d;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.lesson:hover {
+  color: rgba(255, 255, 255, 0.527);
+}
+.video {
+  margin: 1rem;
+}
+.exam-header {
+  text-align: center;
+  margin-top: 1rem;
+}
 @media screen and (max-width: 768px) {
   * {
     width: 100%;
@@ -155,5 +192,23 @@ h4 {
   }
   .swap1 {
     top: 22%;
+  }
+  a.nav-link {
+    text-align: center;
+  }
+  .page-flex {
+    flex-direction: column;
+    width: 100%;
+  }
+  .lessons-list {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+  .lesson {
+    margin: 0 auto;
+  }
+  .first-section {
+    width: 100%;
   }
 }
