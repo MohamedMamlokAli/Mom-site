@@ -5,6 +5,8 @@ const First = () => {
 const [lessons, setLessons] = useState(data)
  return (
   <section className="first-section">
+       <h1 className="lessons-header">الصف الاول</h1>
+
    <LessonsNav dataset={lessons}/>
   </section>
  )
