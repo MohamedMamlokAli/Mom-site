@@ -21,7 +21,7 @@
   color: red !important;
 }
 .section {
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 }
 .main {
   display: flex;
@@ -34,7 +34,12 @@
   width: 70%;
   text-align: right;
   padding: 1rem;
-  line-height: 20px;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 70px;
 }
 .left-content {
   width: 30%;
@@ -46,7 +51,12 @@
   justify-content: space-around;
 }
 .pc-img {
-  width: 60%;
+  width: 80%;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .right-buttons {
   position: relative;
@@ -71,12 +81,36 @@
 .mouse {
   width: 15%;
   align-self: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .keyboard {
   width: 30%;
 }
+.swap {
+  width: 50%;
+  position: absolute;
+  background-color: #90c5ff;
+  top: 25%;
+  left: 25%;
+}
+.swap1 {
+  width: 60%;
+  position: absolute;
+  z-index: 99999;
+  background-color: #90c5ff;
+  top: 27%;
+  left: 20%;
+}
+.navbar-toggler {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
 @media screen and (max-width: 768px) {
+  * {
+    width: 100%;
+  }
   .navbar-nav {
     margin-left: 0;
     margin-right: auto;
@@ -99,6 +133,7 @@
   }
   .mouse {
     width: 15%;
+    padding-top: 25px;
   }
   .keyboard {
     width: 30%;
@@ -114,5 +149,11 @@
     font-size: 4vw;
     text-align: center;
     align-self: center;
+  }
+  .swap {
+    top: 22%;
+  }
+  .swap1 {
+    top: 22%;
   }
 }
